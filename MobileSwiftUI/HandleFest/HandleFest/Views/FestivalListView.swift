@@ -32,7 +32,7 @@ struct FestivalListView: View {
                     }
                 }
             }.onAppear(perform: {intent.loadFests()})
-            .navigationTitle("Festivals :")
+            .navigationTitle("Festival :")
         }
     }
     

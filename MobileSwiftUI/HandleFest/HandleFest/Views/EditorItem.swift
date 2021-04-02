@@ -20,7 +20,6 @@ struct EditorItem: View {
                 HStack{
                     Text(editor.name).bold()
                     Spacer()
-                    Text("\(editor.name)")
                 }
             }
     }

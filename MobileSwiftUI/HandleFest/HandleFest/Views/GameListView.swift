@@ -32,7 +32,7 @@ struct GameListView: View {
                     }
                 }
             }.onAppear(perform: {intent.loadGames()})
-            .navigationTitle("Jeux 2021 :")
+            .navigationTitle("Jeux :")
         }
     }
     

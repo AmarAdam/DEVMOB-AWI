@@ -11,13 +11,13 @@ struct MainView: View {
     
     @State private var tabSelected = 1
     
-    @StateObject var FestivalVM : FestViewModel = FestViewModel(FestivalList(festivals: [Festival(_id : "1", date: "2018", description: "toto tata")]))
+    @StateObject var FestivalVM : FestViewModel = FestViewModel(FestivalList(festivals: [Festival(_id : "", date: "", description: "")]))
     
-    @StateObject var GameVM : GamesViewModel = GamesViewModel(GameList(games: [Game(_id : "1", name: "game", description: "toto tata", editorName: "editor")]))
+    @StateObject var GameVM : GamesViewModel = GamesViewModel(GameList(games: [Game(_id : "", name: "", description: "", editorName: "")]))
     
-    @StateObject var EditorVM : EditorsViewModel = EditorsViewModel(EditorList(editors: [Editor(_id : "1", name: "Hasbro")]))
+    @StateObject var EditorVM : EditorsViewModel = EditorsViewModel(EditorList(editors: [Editor(_id : "", name: "")]))
     
-    @StateObject var AreaVM : AreasViewModel = AreasViewModel(AreaList(areas: [Area(_id:"1",number: 1, description:"")]))
+    @StateObject var AreaVM : AreasViewModel = AreasViewModel(AreaList(areas: [Area(_id:"",number: 0, description:"")]))
     
     var body: some View{
         TabView( selection: $tabSelected ){
